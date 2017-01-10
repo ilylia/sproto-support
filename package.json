@@ -1,0 +1,30 @@
+{
+    "name": "sproto-support",
+    "displayName": "Sproto support",
+    "description": "Sproto support for vscode (.sproto file syntax highlighting)",
+    "version": "0.0.1",
+    "publisher": "ilylia",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ilylia/sproto-support"
+	},
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sproto",
+            "aliases": ["Sproto", "sproto"],
+            "extensions": ["sproto"],
+            "configuration": "./sproto.configuration.json"
+        }],
+        "grammars": [{
+            "language": "sproto",
+            "scopeName": "source.sproto",
+            "path": "./syntaxes/sproto.tmLanguage.json"
+        }]
+    }
+}
